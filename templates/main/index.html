@@ -10,7 +10,40 @@
   </div>
   <div class="row">
     <div class="col-12">
-      {% include 'main/table.html'%}
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Комнат</th>
+            <th scope="col">Этаж</th>
+            <th scope="col">Местоположение</th>
+            <th scope="col">Сегмент</th>
+            <th scope="col">Этажность</th>
+            <th scope="col">Стены</th>
+            <th scope="col">Площадь</th>
+            <th scope="col">Кухня</th>
+            <th scope="col">Балкон/Лоджия</th>
+            <th scope="col">Расстояние от метро</th>
+            <th scope="col">Отделка</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for object in objects %}
+          <tr>
+            <td scope="row">{{ object.rooms_count }}</td>
+            <td scope="row">{{ object.floor_number }}</td>
+            <td scope="row">{{ object.location }}</td>
+            <td scope="row">{{ object.segment }}</td>
+            <td scope="row">{{ object.floors }}</td>
+            <td scope="row">{{ object.walls }}</td>
+            <td scope="row">{{ object.square }}</td>
+            <td scope="row">{{ object.kitchen }}</td>
+            <td scope="row">{{ object.balcony }}</td>
+            <td scope="row">{{ object.from_metro }}</td>
+            <td scope="row">{{ object.wall_decoration }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
