@@ -1,0 +1,10 @@
+#mainBtns {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
+
+tr:hover {
+    background-color: red;
+}

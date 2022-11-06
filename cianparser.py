@@ -23,15 +23,34 @@ from bs4 import BeautifulSoup
 
 
 
-url = "https://www.cian.ru/cat.php?"\
-    "deal_type=sale&"\
-    "district=132&"\
-    "engine_version=2&"\
-    "offer_type=flat&"\
-    "room1=1&"\
-    "room2=1&"\
-    "room9=1"
-
+url = "https://www.cian.ru/cat.php?deal_type=sale&district=132&engine_version=2&offer_type=flat&"room1=1&room2=1&room9=1"
+    
+def getUrl(
+    district=1,
+    room1=0,
+    room2=0,
+    room3=0,
+    room4=0,
+    room5=0,
+    room6=0,
+    room7=0,
+    room8=0,
+    room9=0,
+    object_type=2,
+    maxfloor=100,
+    minfloor=1,
+    house_material=1,
+    maxtarea=1000,
+    mintarea=10,
+    maxkarea=1000,
+    minkarea=1,
+    loggia=1,
+    min_balconies=1,
+    foot_min=15,
+    decorations_list='fine'
+):
+    url = "https://www.cian.ru/cat.php?deal_type=sale&engine_version=2"
+    return url
 
 def getList(url):
     result = []
