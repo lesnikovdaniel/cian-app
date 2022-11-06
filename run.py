@@ -5,7 +5,7 @@ path = ''
 app = Flask(__name__)
 
 UPLOAD_FOLDER = './uploads'
-ALLOWED_EXTENSIONS = set(['.xls','.xlsx','.csv'])
+ALLOWED_EXTENSIONS = set(['.xlsx'])
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
